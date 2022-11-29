@@ -6,4 +6,4 @@ RUN gradle build --no-daemon
 FROM amazoncorretto:18
 RUN mkdir /app
 COPY --from=build /home/gradle/src /app
-ENTRYPOINT ["java","-jar","/app/build/libs/CatBot-6.0-all.jar"]
+ENTRYPOINT ["java","-jar","/app/build/libs/Catbot-6.0-all.jar"]
